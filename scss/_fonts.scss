@@ -1,1 +1,27 @@
-/* Shriftlar ashetta keladi */
+
+/************Font style ************/ 
+/* Space mono-bold - latin */
+@font-face {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url('SpaceMono-Bold.woff2') format('woff2'),
+     /* Super Modern Browsers */
+        url('SpaceMono-Bold.woff') format('woff');
+         /* Modern Browsers */
+}
+
+/* Lexend Deca-normal - latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('LexendDeca-Regular.woff2') format('woff2'),
+     /* Super Modern Browsers */
+        url('LexendDeca-Regular.woff') format('woff');
+   /* Modern Browsers */
+}
+
+

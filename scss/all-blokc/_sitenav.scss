@@ -1,0 +1,15 @@
+/******** Site nav start  ********/ 
+.site-nav__list{
+    display: flex;
+    margin-left: 58px;
+    gap: 32px;
+}
+.site-nav__link{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.site-nav__list .site-nav__link:hover{
+    color: var(--btn-bg-color);
+}
+
+/******** Site nav end  ********/ 

@@ -1,3 +1,20 @@
 .main {
     flex-grow: 1;
 }
+
+.section-scooter {
+    width: 1349px;
+    height: 650px;
+    background-image: url('/fonts/images/Bitmap.jpg'), url('/fonts/images/googleplay.png');
+    background-repeat: no-repeat;
+    background-position: center, center left;
+    background-size: cover, cover;
+}
+
+.section-scooter__title {
+    margin: 0;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}

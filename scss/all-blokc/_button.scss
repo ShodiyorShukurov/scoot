@@ -1,5 +1,19 @@
-.button {
-    padding: 0;
+.btn {
+    padding: 14px 39px;
     margin: 0;
+    border: none;
+    border: 3px solid transparent;
+    background-color: var(--btn-bg-color);
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--btn-text-color);
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+ 
+.btn:hover{
+    color:var(--btn-bg-color); 
+    border: 3px solid var(--btn-bg-color);
+    background-color: var(--btn-text-color);
 }

@@ -1,0 +1,22 @@
+/******* Header sytle start ******/
+
+
+.site-header {
+    padding: 22px 0;
+    max-width:1440px ;
+    min-height: 96px;
+}
+
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__links {
+    display: flex;
+    align-items: center;
+}
+
+
+/******* Header sytle end ******/
