@@ -2,8 +2,9 @@
 
 
 .site-header {
+    margin: 0 auto;
     padding: 22px 0;
-    max-width:1440px ;
+    width:1440px;
     min-height: 96px;
 }
 
@@ -20,3 +21,14 @@
 
 
 /******* Header sytle end ******/
+
+/***** Header media sart ******/ 
+@media  only screen and (max-width:670px) {
+    .site-header__logo{
+       text-align: center;
+    }
+    
+}
+
+
+/*****Header media end *****/ 

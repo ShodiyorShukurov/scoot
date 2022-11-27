@@ -13,3 +13,8 @@
 }
 
 /******** Site nav end  ********/ 
+@media  only screen and (max-width:670px){
+    .site-nav__list{
+        display: none;
+    }
+}
