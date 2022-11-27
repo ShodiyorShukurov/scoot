@@ -471,6 +471,7 @@ ul {
 
 .site-nav__link {
   cursor: pointer;
+  color: var(--nav-text-color);
   transition: all 0.3s;
 }
 
@@ -624,9 +625,7 @@ ul {
 }
 
 /**** Main news styles end***/
-
 /***** MAIN style end******/
-
 /********* Site news styles strat *********/
 .site-news {
   width: 1349px;
