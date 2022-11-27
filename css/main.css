@@ -12,6 +12,12 @@
   --footer-text-color: #939CAA;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -87,7 +93,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -383,7 +389,7 @@ ul {
 .visually-hidden {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -398,6 +404,7 @@ ul {
   padding: 0 15px;
 }
 
+/***** Button sytle start****/
 .btn {
   padding: 14px 39px;
   margin: 0;
@@ -429,22 +436,11 @@ ul {
   background-color: transparent;
 }
 
-@media only screen and (max-width: 600px) {
-  .hamburger-btn {
-    display: inline;
-  }
-  header .btn {
-    display: none;
-  }
-  .section-scooter .btn {
-    align-items: center;
-  }
-}
+/***** Button sytle end****/
 /******* Header sytle start ******/
 .site-header {
-  margin: 0 auto;
   padding: 22px 0;
-  width: 1440px;
+  max-width: 1440px;
   min-height: 96px;
 }
 
@@ -460,14 +456,12 @@ ul {
 }
 
 /******* Header sytle end ******/
-/***** Header media sart ******/
-@media only screen and (max-width: 600px) {
-  .mobile {
-    display: flex;
-    align-items: center;
-  }
-}
-/*****Header media end *****/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 /******** Site nav start  ********/
 .site-nav__list {
   display: flex;
@@ -485,13 +479,14 @@ ul {
 }
 
 /******** Site nav end  ********/
-@media only screen and (max-width: 670px) {
-  .site-nav__list {
-    display: none;
-  }
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/**** MAIN style start*****/
 .main {
-  margin: 0 auto;
   flex-grow: 1;
 }
 
@@ -549,90 +544,14 @@ ul {
   top: 355px;
 }
 
-@media only screen and (max-width: 600px) {
-  .section-scooter {
-    margin: 0 auto;
-    margin-bottom: 131px;
-    position: relative;
-    height: 650px;
-    background-image: url("/fonts/images/Bitmap.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  .section-scooter__texts {
-    padding: 0;
-  }
-  .section-scooter__path1 {
-    display: none;
-  }
-  .section-scooter__wrapper {
-    text-align: center;
-  }
-  .section-scooter__text {
-    width: 573px;
-    margin: 0;
-  }
-}
-/********* Site news styles strat *********/
-.site-news {
-  width: 1349px;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 147px;
-}
-
-.site-news {
-  background-image: url(/fonts/images/background-img-border.png);
-  background-repeat: no-repeat;
-  background-position-x: 0;
-  background-position-y: 40px;
-}
-
-.site-news__images {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  background-color: var(--btn-bg-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.site-news__list {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-.site-news__card-title {
-  margin: 0;
-  margin-top: 40px;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -1.07143px;
-  color: var(--main-title-color);
-}
-
-.site-news__text {
-  margin: 0;
-  margin-top: 27px;
-  width: 280px;
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  color: var(--main-text-color);
-}
-
+/******* Section-scooter end*******/
 /**** Main news styles start***/
 .section-main-news {
   margin: 0 auto;
   width: 1349px;
   margin-bottom: 307px;
   position: relative;
+  overflow: hidden;
 }
 
 .main-news__list {
@@ -681,7 +600,7 @@ ul {
 
 .mask-right__svg {
   position: absolute;
-  left: 670px;
+  right: 0;
   top: 300px;
 }
 
@@ -704,6 +623,63 @@ ul {
   overflow: hidden;
 }
 
+/**** Main news styles end***/
+/***** MAIN style end******/
+/********* Site news styles strat *********/
+.site-news {
+  width: 1349px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 147px;
+  overflow-y: hidden;
+}
+
+.site-news {
+  background-image: url(/fonts/images/background-img-border.png);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 40px;
+}
+
+.site-news__images {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: var(--btn-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-news__list {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.site-news__card-title {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--main-title-color);
+}
+
+.site-news__text {
+  margin: 0;
+  margin-top: 27px;
+  width: 280px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--main-text-color);
+}
+
+/***** Footer style start*****/
 footer {
   flex-grow: 1;
   margin: 0 auto;
@@ -747,6 +723,7 @@ footer {
 
 .site-footer__links {
   display: flex;
+  align-items: center;
 }
 
 .site-footer__link-list {
@@ -781,4 +758,6 @@ footer {
 
 .logo-svg__links:hover {
   color: #E5ECF4;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/***** Footer style end*****//*# sourceMappingURL=main.css.map */

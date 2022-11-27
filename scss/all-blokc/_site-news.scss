@@ -1,0 +1,66 @@
+
+
+
+/********* Site news styles strat *********/
+.site-news {
+    width: 1349px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 147px;
+    overflow-y: hidden;
+}
+
+.site-news {
+    background-image: url(/fonts/images/background-img-border.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 40px;
+}
+
+.site-news__images {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: var(--btn-bg-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.site-news__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 100px;
+}
+
+.site-news__card-title {
+    margin: 0;
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: var(--main-title-color);
+}
+
+.site-news__text {
+    margin: 0;
+    margin-top: 27px;
+    width: 280px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--main-text-color);
+}

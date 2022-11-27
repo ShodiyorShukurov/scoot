@@ -1,3 +1,4 @@
+/***** Button sytle start****/ 
 .btn {
     padding: 14px 39px;
     margin: 0;
@@ -9,6 +10,8 @@
     color: var(--btn-text-color);
     text-decoration: none;
     cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -30,15 +33,4 @@
 }
 
 
-
-@media only screen and (max-width:600px) {
-    .hamburger-btn{
-        display: inline;
-    }
-    header .btn{
-        display: none;
-    }
-    .section-scooter .btn {
-        align-items: center;
-    }
-}
+/***** Button sytle end****/ 

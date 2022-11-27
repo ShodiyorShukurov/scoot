@@ -1,36 +1,35 @@
+
+
 /******* Header sytle start ******/
 
 
 .site-header {
-    margin: 0 auto;
     padding: 22px 0;
-    width:1440px;
+    max-width:1440px;
     min-height: 96px;
 }
 
 .site-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .site-header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
 /******* Header sytle end ******/
 
-/***** Header media sart ******/ 
-@media  only screen and (max-width:600px) {
-    .mobile{
-        display: flex;
-
-        align-items: center;
-    }
-    
-}
-
-
-/*****Header media end *****/ 
