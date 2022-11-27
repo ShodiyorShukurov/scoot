@@ -11,10 +11,10 @@
     position: relative;
     width: 1349px;
     height: 650px;
-    background-image: url('/fonts/images/Bitmap.jpg'), url('/fonts/images/googleplay.png');
+    background-image: url('/fonts/images/Bitmap.jpg');
     background-repeat: no-repeat;
-    background-position: center, center left;
-    background-size: cover, cover;
+    background-position: center center ;
+    background-size: cover;
 
 }
 
@@ -60,9 +60,39 @@
     top: 355px;
 }
 
+@media only screen and (max-width:600px) {
+    .section-scooter{
+        margin: 0 auto;
+        margin-bottom: 131px;
+        position: relative;
+        
+        height: 650px;
+        background-image: url('/fonts/images/Bitmap.jpg');
+        background-repeat: no-repeat;
+        background-position: center center ;
+        background-size: cover;
+    }
+
+    .section-scooter__texts{
+        padding: 0;
+    }
+    .section-scooter__path1 {
+        display: none;
+    }
+
+    .section-scooter__wrapper {
+        text-align: center;
+    }
+
+    .section-scooter__text {
+        width: 573px;
+        margin: 0;
+    }
+}
 
 /********* Site news styles strat *********/
 .site-news {
+    width: 1349px;
     position: relative;
     margin: 0 auto;
     margin-top: 30px;
@@ -115,6 +145,8 @@
 
 /**** Main news styles start***/
 .section-main-news {
+    margin: 0 auto;
+    width: 1349px;
     margin-bottom: 307px;
     position: relative;
 }
@@ -124,6 +156,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    row-gap: 160px;
 }
 
 .main-news__card-title {
@@ -147,9 +180,42 @@
     color: var(--main-text-color);
 }
 
-.mask-svg {
+.card-imges {
+    border-radius: 50%;
+}
+
+.bacground-img__right {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.bacground-img__left {
+    position: absolute;
+    left: 0;
+}
+
+.mask-right__svg {
     position: absolute;
     left: 670px;
-    top: 200px;
+    top: 300px;
+}
 
+.mask-left__svg {
+    position: absolute;
+    top: 600px;
+    left: 0;
+}
+
+.bacground-img__right-end {
+    position: absolute;
+    right: 0;
+    top: 1200px;
+}
+
+.mask-right__svg-end {
+    position: absolute;
+    top: 1300px;
+    left: 1050px;
+    overflow: hidden;
 }

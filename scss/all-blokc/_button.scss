@@ -11,17 +11,34 @@
     cursor: pointer;
     transition: all 0.3s;
 }
- 
- .btn:hover{
-    color:var(--btn-bg-color); 
+
+.hamburger-btn {
+    display: none;
+    width: 20px;
+    height: 16px;
+    background-image: url(/fonts/images/logo/hamburger-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: var(--btn-bg-color);
     border: 3px solid var(--btn-bg-color);
     background-color: transparent;
 }
 
 
 
-@media  only screen and (max-width:670px) {
-    .site-header__wrapper .btn{
+@media only screen and (max-width:600px) {
+    .hamburger-btn{
+        display: inline;
+    }
+    header .btn{
         display: none;
+    }
+    .section-scooter .btn {
+        align-items: center;
     }
 }
